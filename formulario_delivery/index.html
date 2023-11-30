@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Formulário de Pedido</title>
+</head>
+<body>
+ 
+    <div class="estruturacao_formulario">
+
+        <h1 class="titulo_txt">Insira os seus dados para finalizar o pedido</h1>
+
+        <div class="formulario_documento">
+            <label for="documento_cpf">Documento</label>
+            <input type="text" id="documento_cpf" name="documento" placeholder="Digite o seu CPF">
+        </div>
+
+        <div class="formulario_endereco">
+            <label for="endereco_cep">Endereço</label>
+            <input type="text" id="endereco_cep" name="cep" placeholder="Digite o seu CEP">
+
+            <input type="text" id="endereco_rua" name="rua" placeholder="Digite o nome da sua rua">
+
+            <input type="text" id="endereco_numero" name="numero" placeholder="Digite o número da residência">
+
+            <input type="text" id="endereco_complemento" name="complemento" placeholder="Digite o complemento">
+
+            <input type="text" id="endereco_bairro" name="bairro" placeholder="Digite o seu bairro">
+
+            <select id="estado" class="seletor_estado">
+                <option value="RJ">Rio de Janeiro</option>
+            </select>
+
+            <select id="cidade" class="seletor_cidade">
+                <option value="" disabled selected hidden>Selecione uma Cidade</option>
+            </select>
+
+            <textarea id="referencia" name="referencia" rows="4" cols="50" placeholder="Digite uma referência (opcional)"></textarea>
+        </div>
+
+        <div class="formulario_pagamento">
+            <label for="seletorPagamento">Opção de Pagamento</label>
+            <select id="seletorPagamento">
+                <option value="" disabled selected hidden>Escolha uma forma de pagamento</option>
+                <option value="credito">Cartão de Crédito</option>
+                <option value="debito">Cartão de Débito</option>
+                <option value="dinheiro">Dinheiro</option>
+                <option value="pix">Pix</option>
+            </select>
+            <p class="obs_pagamento">*O pagamento é realizado no ato da entrega.</p>
+        </div>
+
+    </div>
+
+    <div class="linha"></div>
+
+    <div class="prosseguimento_pedido">
+        <a class="continuar_comprando" href="continuar_comprando">Continuar Comprando</a>
+        <p class="ou">ou</p>
+        <button class="finalizar_pedido_btn">Finalizar Pedido</button>
+    </div>
+
+    <div class="section_fixa">
+        
+        <div class="preco_total">
+            <h3 class="preco_total_txt">Aqui entrará o preço total</h3>
+        </div>
+
+
+
+    </div>
+    
+
+    <script src="script.js"></script>
+</body>
+</html>

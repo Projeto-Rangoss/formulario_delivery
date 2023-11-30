@@ -1,0 +1,131 @@
+.titulo_txt {
+    font-family: Arial, Helvetica, sans-serif;
+    padding-bottom: 100px;
+    padding-top: 40px;
+}
+
+.estruturacao_formulario {
+    width: 80%;
+    margin: 0 auto;
+    padding-bottom: 80px;
+}
+
+/* Estilo comum para todas as labels */
+.formulario_documento label, 
+.formulario_endereco label, 
+.formulario_pagamento label {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 600;
+    display: block; /* Faz com que a label ocupe sua própria linha */
+    margin-bottom: 5px; /* Espaçamento entre a label e o input */
+}
+
+/* Estilo comum para todos os inputs e seletores */
+.formulario_documento input, 
+.formulario_endereco input, 
+.formulario_pagamento select, 
+.seletor_estado, 
+.seletor_cidade {
+    width: 50%;
+    padding: 10px;
+    margin: 10px 0; /* Espaçamento vertical entre os inputs e seletores */
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+/* Estilos para os seletores de estado e cidade */
+.seletor_estado, .seletor_cidade {
+    display: inline-block; /* Exibe os seletores em linha */
+    width: calc(50% - 20px); /* Ajusta a largura considerando a margem */
+    margin-right: 10px; /* Margem à direita para o seletor de estado */
+}
+
+.seletor_cidade {
+    margin-right: 0; /* Remove a margem direita do seletor de cidade */
+}
+
+/* Estilos para textarea */
+textarea {
+    padding: 10px;
+    margin: 10px 0; /* Espaçamento vertical entre os textareas */
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    width: 100%; /* Largura relativa ao container */
+    height: 100px; /* Altura ajustada do textarea */
+    resize: none; /* Impede que o usuário redimensione a área de texto */
+}
+
+.obs_pagamento {
+    color: #888585;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 13px;
+}
+
+.linha {
+    background-color: #ccc;
+    width: 80%;
+    height: 2px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.prosseguimento_pedido {
+    display: flex; /* Ativa o Flexbox */
+    flex-direction: column; /* Os itens são organizados verticalmente */
+    justify-content: center; /* Centraliza os itens verticalmente */
+    align-items: center; /* Centraliza os itens horizontalmente, se desejar */
+    height: 50vh; /* Altura do contêiner (exemplo: 100% da altura da viewport) */
+}
+
+
+.continuar_comprando {
+    color: black;
+    font-family: Arial, Helvetica, sans-serif;
+    /* display: block;
+    margin: 10px auto; */
+}
+
+.continuar_comprando:hover {
+    color: #ddad2a;
+}
+
+.ou {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.finalizar_pedido_btn{
+    background-color: #F4C237; /* Cor de fundo verde */
+    border: none; /* Sem borda */
+    color: white; /* Cor do texto */
+    padding: 15px 32px; /* Espaçamento interno */
+    text-align: center; /* Alinhamento do texto */
+    text-decoration: none; /* Sem sublinhado no texto */
+    display: inline-block; /* Exibição em linha */
+    font-size: 16px; /* Tamanho da fonte */
+    margin: 4px 2px; /* Margem ao redor do botão */
+    cursor: pointer; /* Cursor do mouse como ponteiro */
+    border-radius: 8px; /* Bordas arredondadas */
+    transition: background-color 0.3s, box-shadow 0.3s; /* Transição suave para hover */
+}
+
+.finalizar_pedido_btn:hover {
+    background-color: #ddad2a; /* Cor de fundo ao passar o mouse */
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2); /* Sombra ao passar o mouse */
+}
+
+.preco_total_txt {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.section_fixa {
+        position: fixed; /* Fixa a posição no viewport */
+        bottom: 0; /* Fixa no topo do viewport */
+        width: 100%; /* Estende a barra de navegação para a largura total da tela */
+        background-color: rgba(51, 51, 51, 0.5); /* Cor de fundo para a barra de navegação */
+        color: white; /* Cor do texto */
+        padding: 10px; /* Padding para o conteúdo da barra de navegação */
+        z-index: 1000; /* Assegura que a barra de navegação fique acima dos outros elementos */
+}
+
+
+
